@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <cstdlib>
-
+#include <stdio.h>
 
 #define TRACK_LENGTH 15
 #define HORSES_LENGTH 5
