@@ -79,11 +79,11 @@ void coinFlip(int horses[], int horseCount){
         bool advance = rand() % 2 == 1;
         
 		
-		//if receives advance result
+	//if receives advance result
         if (advance) {
         
         
-        	//increment horses[i] by 1 if advance returns 1
+            //increment horses[i] by 1 if advance returns 1
             horses[i]++;
         
 
@@ -107,15 +107,19 @@ bool isWinner(int horses[], int horseCount){
 
 
         //if horses[i] is greater or equal to the track length output the winner
+	
+	//if using alternative print function commented out below...
+	//comment out if statement below and use the following if statement
+	//if(horses[i] == TRACK_LENGTH){
         if(horses[i] >= TRACK_LENGTH - 1){
         
 
-        	//printf("Horse %d wins!", i);
-        	//printf("\n");
+            //printf("Horse %d wins!", i);
+            //printf("\n");
             cout<<"Horse "<<i<<" wins!"<<endl;
         
 
-        	//return true
+            //return true
             return true;
         
 
@@ -145,7 +149,7 @@ int draw(int horses[], int horseCount){
         for(int track = 0; track < horses[i]; track++) {
         
 
-    		//print the statement in quotations.
+    	    //print the statement in quotations.
             printf(".");
         
         
@@ -160,7 +164,7 @@ int draw(int horses[], int horseCount){
         for(int track = horses[i]+2; track <= TRACK_LENGTH; track++) {
             
 
-        	//print the statement in quotations.
+            //print the statement in quotations.
             printf(".");
             
             
