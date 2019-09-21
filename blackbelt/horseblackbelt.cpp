@@ -184,6 +184,28 @@ int draw(int horses[], int horseCount){
     
     return 0;
 
+    //another way to achieve the same print functionality
+    /*
+	for (int i = 0; i < horseCount; i++) {
+
+		for (int track = horses[i]; track < TRACK_LENGTH; track++) {
+
+
+			if (horses[i] == track) {
+
+				printf("%d", horseNumber);
+
+			} else {
+
+				printf(".");
+			}
+		}
+
+		printf("\n");
+
+	}
+    */
+
 
 } //end of draw function
 
